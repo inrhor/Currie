@@ -1,4 +1,4 @@
-package cn.inrhor.currie.api
+package cn.inrhor.currie.api.treasury
 
 import me.lokka30.treasury.api.economy.EconomyProvider
 import me.lokka30.treasury.api.economy.account.Account
@@ -8,8 +8,11 @@ import me.lokka30.treasury.api.economy.misc.OptionalEconomyApiFeature
 import me.lokka30.treasury.api.economy.response.EconomySubscriber
 import java.util.*
 
+/**
+ * 经济提供与管理
+ */
+class Provider: EconomyProvider {
 
-class EconomyCore: EconomyProvider {
     override fun getSupportedOptionalEconomyApiFeatures(): MutableSet<OptionalEconomyApiFeature> {
         TODO("Not yet implemented")
     }
